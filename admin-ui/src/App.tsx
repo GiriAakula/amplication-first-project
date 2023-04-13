@@ -13,6 +13,10 @@ import { VehicleList } from "./vehicle/VehicleList";
 import { VehicleCreate } from "./vehicle/VehicleCreate";
 import { VehicleEdit } from "./vehicle/VehicleEdit";
 import { VehicleShow } from "./vehicle/VehicleShow";
+import { PlaceList } from "./place/PlaceList";
+import { PlaceCreate } from "./place/PlaceCreate";
+import { PlaceEdit } from "./place/PlaceEdit";
+import { PlaceShow } from "./place/PlaceShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -52,6 +56,13 @@ const App = (): React.ReactElement => {
           edit={VehicleEdit}
           create={VehicleCreate}
           show={VehicleShow}
+        />
+        <Resource
+          name="Place"
+          list={PlaceList}
+          edit={PlaceEdit}
+          create={PlaceCreate}
+          show={PlaceShow}
         />
       </Admin>
     </div>

@@ -30,3 +30,11 @@ model Vehicle {
   updatedAt   DateTime  @updatedAt
   vehicleType String?
 }
+
+model Place {
+  createdAt        DateTime @default(now())
+  id               String   @id @default(cuid())
+  placeDescription String?
+  placeName        String?
+  updatedAt        DateTime @updatedAt
+}
