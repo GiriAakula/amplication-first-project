@@ -17,6 +17,10 @@ import { PlaceList } from "./place/PlaceList";
 import { PlaceCreate } from "./place/PlaceCreate";
 import { PlaceEdit } from "./place/PlaceEdit";
 import { PlaceShow } from "./place/PlaceShow";
+import { CityList } from "./city/CityList";
+import { CityCreate } from "./city/CityCreate";
+import { CityEdit } from "./city/CityEdit";
+import { CityShow } from "./city/CityShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -63,6 +67,13 @@ const App = (): React.ReactElement => {
           edit={PlaceEdit}
           create={PlaceCreate}
           show={PlaceShow}
+        />
+        <Resource
+          name="City"
+          list={CityList}
+          edit={CityEdit}
+          create={CityCreate}
+          show={CityShow}
         />
       </Admin>
     </div>

@@ -38,3 +38,10 @@ model Place {
   placeName        String?
   updatedAt        DateTime @updatedAt
 }
+
+model City {
+  cityName  String?
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
