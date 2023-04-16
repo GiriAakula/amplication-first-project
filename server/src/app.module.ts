@@ -4,6 +4,7 @@ import { MorganInterceptor, MorganModule } from "nest-morgan";
 import { UserModule } from "./user/user.module";
 import { VehicleModule } from "./vehicle/vehicle.module";
 import { PlaceModule } from "./place/place.module";
+import { CityModule } from "./city/city.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -23,6 +24,7 @@ import { AuthModule } from "./auth/auth.module";
     UserModule,
     VehicleModule,
     PlaceModule,
+    CityModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
